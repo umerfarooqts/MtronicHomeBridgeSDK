@@ -1,0 +1,46 @@
+{
+  "pluginAlias": "MtronicHomebridgePlugin",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true,
+        "default": "Mtronic Dynamic Platform"
+      },
+      "brokerUrl": {
+        "title": "Broker URL",
+        "type": "string",
+        "required": true,
+        "default": "mqtts://localhost:8883"
+      },
+      "mhubId": {
+        "title": "MHUB ID",
+        "type": "string",
+        "required": true,
+        "default": ""
+      },
+      "ca_path": {
+        "title": "CA Path",
+        "type": "string",
+        "required": true,
+        "default": "/home/certs/ca.pem"
+      },
+      "client_key_path": {
+        "title": "Client Key Path",
+        "type": "string",
+        "required": true,
+        "default": "/home/certs/client_key.pem"
+      },
+      "client_cert_path": {
+        "title": "Client Cert Path",
+        "type": "string",
+        "required": true,
+        "default": "/home/certs/client_cert.pem"
+      }
+    }
+  }
+}
